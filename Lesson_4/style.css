@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.page_wrapper {
+    width: 95%;
+    max-width: 865px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #242635;
+    background-color: #fff;
+}
+
+.cta {
+    background-color: lightblue;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+.navigation {
+    margin-top: 70px;
+    text-align: right;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.page_text {
+    margin-top: 145px;
+}
+
+.page_title {
+    font-size: 90px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.page_description {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    width: 100%;
+    max-width: 575px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.page_image {
+    margin-top: 50px;
+}
+
+/* box model -> spacing / border / size */
+/* typography -> all related to the text */
+/* bg props */
+/* position */
+/* display */
+/* lists */
+/* visual effects / animations */
