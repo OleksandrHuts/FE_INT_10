@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/third_rail.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/third_rail.woff2") format("woff2");
+  font-weight: 100;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  src: url("../fonts/roboto-regular.ttf") format("ttf"), url("../fonts/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular.woff2") format("woff2");
+  font-weight: 400;
+}

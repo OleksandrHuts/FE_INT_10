@@ -1,0 +1,39 @@
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, textarea {
+  outline: none;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #544837;
+  --accent-color: #FF9900;
+  --light-blue: #BCD0E5;
+}
+
+body {
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Poppins", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  display: block;
+}

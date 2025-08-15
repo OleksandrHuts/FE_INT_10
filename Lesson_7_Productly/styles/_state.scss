@@ -1,0 +1,17 @@
+.button:hover {
+    background-color: transparent;
+    color: #173A56;
+    border-color: var(--light-blue);
+}
+
+.button.transparent {
+    background-color: transparent;
+    color: #173A56;
+    border: 1px solid var(--light-blue);
+}
+
+.button.transparent:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: transparent;
+}
