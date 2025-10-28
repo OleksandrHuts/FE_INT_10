@@ -1,0 +1,66 @@
+#app {
+    width: 300px;
+    height: 300px;
+    border: 25px solid #fff;
+    padding: 20px;
+    overflow: auto;
+    background-color: pink;
+
+    /* position: absolute; */
+    left: 45px;
+    top: 90px;
+}
+
+.wrapper {
+    position: relative;
+    height: 500vh;
+    width: 100%;
+    background-color: #3b3b3b;
+}
+
+.modal_window {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    border: 2px solid lightskyblue;
+    border-radius: 20px;
+
+    display: none;
+}
+
+.modal_window.active {
+    display: block;
+}
+
+.modal_cta {
+    display: inline-block;
+    background-color: lightskyblue;
+    font-size: 32px;
+
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.close_btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}

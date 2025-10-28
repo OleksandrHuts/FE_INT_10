@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👥 User's control system</h1>
+        </div>
+
+        <div class="crud-container">
+            <div class="toolbar">
+                <div class="search-box">
+                    <input type="text" class="app-input" id="search-value" placeholder="John">
+                    <button class="btn btn-primary" onclick="searchUser()">🔍 Search user...</button>
+
+                    <div>
+                        <input type="text" class="app-input" name="first_name" id="user_f_name" placeholder="John">
+                        <input type="text" class="app-input" name="last_name" id="user_l_name" placeholder="Doe">
+                        <input type="text" class="app-input" name="salary" id="user_salary" placeholder="100$">
+                        <button class="btn btn-primary" onclick="addNewUser()">+ Add user</button>
+                    </div>
+                    
+                </div>
+                <div class="table-info">
+                    <span id="user-count">Total: 0</span>
+                </div>
+            </div>
+
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable('firstName')">First name</th>
+                        <th onclick="sortTable('lastName')">Last name</th>
+                        <th onclick="sortTable('position')">Role</th>
+                        <th onclick="sortTable('salary')">Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table-body">
+                    <tr>
+                        <td>Name</td>
+                        <td>Last name</td>
+                        <td>Role</td>
+                        <td>Salary</td>
+                        <td>Actions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

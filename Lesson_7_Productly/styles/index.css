@@ -210,3 +210,30 @@ logo_link, .nav_container, .nav, .header_actions {
   color: #fff;
   border-color: transparent;
 }
+
+.heart-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.heart-path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: fill 0.3s ease;
+}
+
+.heart-icon:hover .heart-path {
+  fill: currentColor;
+}
+
+.heart-icon:active {
+  transform: scale(0.95);
+}
+
+.heart-icon:focus {
+  outline: 2px solid #4F46E5;
+  outline-offset: 2px;
+}

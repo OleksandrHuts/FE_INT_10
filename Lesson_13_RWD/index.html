@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Include mmenu files -->
+    <link href="./mmenu/mmenu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css">
+
+
+
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                new Mmenu("#menu", {
+                    "offCanvas": {
+                        "position": "left"
+                    },
+                    "theme": "light"
+                });
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <div class="page" id="page">
+        <div id="header">
+            <a href="#menu">-></a>
+        </div>
+        <div class="container">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./small.jpg">
+                <source media="(max-width: 1024px)" srcset="./medium.jpg">
+                <source media="(min-width: 1024px)" srcset="./big.jpg">
+
+                <img src="./small.jpg" alt="#">
+            </picture>
+        </div>
+
+        <section class="auto_grid">
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+
+            <article class="product_card">
+                <img src="https://picsum.photos/300" alt="my product" class="product_image">
+                <h3 class="product_title">Product Name 1</h3>
+                <p class="product_price">0.99$</p>
+            </article>
+        </section>
+    </div>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/work">Our work</a></li>
+            <li><span>About us</span>
+                <ul>
+                    <li><a href="/about/history">History</a></li>
+                    <li><span>The team</span>
+                        <ul>
+                            <li><a href="/about/team/management">Management</a></li>
+                            <li><a href="/about/team/sales">Sales</a></li>
+                            <li><a href="/about/team/development">Development</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><span>Services</span>
+                <ul>
+                    <li><a href="/services/design">Design</a></li>
+                    <li><a href="/services/development">Development</a></li>
+                    <li><a href="/services/marketing">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script src="./mmenu/mmenu.js"></script>
+</body>
+
+</html>

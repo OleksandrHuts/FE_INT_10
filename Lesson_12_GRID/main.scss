@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #b3bf8a;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box {
+    outline: 3px solid black;
+    background-color: pink;
+}
+
+.grid {
+    border: 5px solid white;
+    width: 100%;
+    min-height: 50vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(5, 370px);
+}
+
+.item_2 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
