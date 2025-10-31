@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="edit_user_modal">
+        <p>Edit user</p>
+        <div class="input_row">
+            <input type="text" name="user_first_name" placeholder="John">
+        </div>
+        <div class="input_row">
+            <input type="text" name="user_last_name" placeholder="Doe">
+        </div>
+        <div class="input_row">
+            <input type="text" name="user_role" placeholder="Admin">
+        </div>
+        <div class="input_row">
+            <input type="text" name="user_salary" placeholder="1000">
+        </div>
+        <div class="input_row">
+            <button onclick="editConfirm()" class="edit_submit">Edit</button>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
             <h1>👥 User's control system</h1>
@@ -34,22 +53,14 @@
             <table class="users-table">
                 <thead>
                     <tr>
-                        <th onclick="sortTable('firstName')">First name</th>
-                        <th onclick="sortTable('lastName')">Last name</th>
-                        <th onclick="sortTable('position')">Role</th>
+                        <th onclick="sortTable('first_name')">First name</th>
+                        <th onclick="sortTable('last_name')">Last name</th>
+                        <th onclick="sortTable('role')">Role</th>
                         <th onclick="sortTable('salary')">Salary</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody id="users-table-body">
-                    <tr>
-                        <td>Name</td>
-                        <td>Last name</td>
-                        <td>Role</td>
-                        <td>Salary</td>
-                        <td>Actions</td>
-                    </tr>
-                </tbody>
+                <tbody id="users-table-body"></tbody>
             </table>
         </div>
     </div>
